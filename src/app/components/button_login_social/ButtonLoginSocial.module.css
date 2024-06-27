@@ -1,0 +1,19 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 20px #0000000a, 0px 2px 6px #0000000a, 0px 0px 1px #0000000a;
+  border: none;
+  border-radius: 8px;
+  width: 64px;
+  height: 64px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button:hover {
+  filter:brightness(1.1);
+  transition: 0.3s;
+}

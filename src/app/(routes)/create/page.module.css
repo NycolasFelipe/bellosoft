@@ -1,0 +1,129 @@
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 40px 30px;
+  background: #fffffc;
+  background-image: url("/img/background.png");
+  background-size: 50%;
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+.return {
+  padding-top: 30px;
+}
+
+.return button {
+  background: none;
+  border: none;
+  color: #8B8B8B;
+  cursor: pointer;
+}
+
+.return button svg {
+  height: 28px;
+  width: 28px;
+}
+
+.header {
+  padding: 24px 0;
+}
+
+.header h2 {
+  font-size: 24px;
+  line-height: 28px;
+  color: #20130B;
+  padding-bottom: 24px;
+}
+
+.header p {
+  font-size: 14px;
+  line-height: 19px;
+  color: #8B8B8B;
+}
+
+.form,
+.form .inputs {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+.form .inputs {
+  gap: 10px;
+  padding-bottom: 10px;
+}
+
+.form .buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form .password_strength {
+  margin-bottom: 20px;
+  padding: 2px 0;
+  border-radius: 5px;
+  font-size: 13px;
+  color: #fff;
+  text-align: center;
+  background: #f5f5f5;
+  visibility: hidden;
+}
+
+.form .password_strength.weak,
+.form .password_strength.medium,
+.form .password_strength.strong {
+  visibility: visible;
+}
+
+.form .password_strength.weak {
+  color: #d34f4f;
+}
+
+.form .password_strength.medium {
+  color: #8585d6; 
+}
+
+.form .password_strength.strong {
+  color: #49ca49;
+}
+
+.login_social {
+  padding-top: 40px;
+}
+
+.login_social h3 {
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  color: #8B8B8B;
+  padding-bottom: 25px;
+}
+
+.login_social .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.create_account {
+  padding-top: 20px;
+}
+
+.create_account p {
+  font-size: 13px;
+  line-height: 15px;
+  color: #8B8B8B;
+  text-align: center;
+}
+
+.create_account p span a {
+  color: #BC8363;
+}
+
+@media (max-width: 340px) {
+  .login_social .buttons {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}

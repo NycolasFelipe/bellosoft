@@ -1,0 +1,30 @@
+.button {
+  background: #BC8363;
+  border-radius: 8px;
+  height: 55px;
+  width: 100%;
+  color: #fff;
+  border: none;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background: #c78c69;
+  transition: 0.3s;
+}
+
+.button.alt {
+  background: #fff;
+  color: #BC8363;
+}
+
+.button.alt:hover {
+  background: #fafafa;
+}
+
+.button.disabled {
+  cursor: not-allowed;
+  background: #d3d3d3;
+}

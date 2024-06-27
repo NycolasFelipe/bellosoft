@@ -1,0 +1,84 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  left: 20px;
+  top: 24px;
+}
+
+.label {
+  position: absolute;
+  left: 60px;
+  top: 16px;
+  font-size: 13px;
+  color: #20130B;
+}
+
+.input {
+  height: 68px;
+  padding: 0 60px;
+  padding-top: 20px;
+  background: transparent;
+  border: 1px solid #E9ECEF;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #8B8B8B;
+  outline: none;
+  transition: 0.3s;
+}
+
+.email_warning {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: -24px;
+  font-size: 13px;
+  gap: 4px;
+  color: #ff0000;
+  filter: opacity(0);
+  transition: 0.3s;
+}
+
+.email_warning.visible {
+  filter: opacity(1);
+  transition: 0.3s;
+}
+
+.password_eye {
+  position: absolute;
+  right: 20px;
+  top: 24px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.password_eye .eye_hide {
+  font-size: 24px;
+  color: #8b8b89;
+  position: absolute;
+  right: -2px;
+  top: -0.5px
+}
+
+.password_eye>.eye_hide {
+  display: none;
+}
+
+.password_eye.visible>.eye_visible {
+  display: block;
+}
+
+.password_eye.visible>.eye_hide {
+  display: block !important;
+}
+
+.password_eye.visible>.eye_visible {
+  display: none !important;
+}
