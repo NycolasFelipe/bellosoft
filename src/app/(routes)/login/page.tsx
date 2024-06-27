@@ -62,7 +62,7 @@ export default function Login() {
       </div>
       <div className={styles.create_account}>
         <h3 style={{ visibility: 'hidden' }}>Create account</h3>
-        <p>Don't have an account? <span><Link href="/create"> Create Now</Link></span></p>
+        <p>Don&apos;t have an account? <span><Link href="/create"> Create Now</Link></span></p>
       </div>
     </div>
   );
